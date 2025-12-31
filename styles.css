@@ -14,7 +14,7 @@ h1 {
 }
 
 /* Input Field and Button */
-#city-input {
+#state-input {
   display: block;
   margin: 20px auto;
   padding: 10px;
@@ -25,7 +25,7 @@ h1 {
   border-radius: 4px;
 }
 
-#fetch-weather {
+#fetch-alerts {
   display: block;
   margin: 10px auto;
   padding: 10px 20px;
@@ -37,12 +37,17 @@ h1 {
   cursor: pointer;
 }
 
-#fetch-weather:hover {
+#fetch-alerts:hover {
   background-color: #0056b3;
 }
 
-/* Weather Display Section */
-#weather-display {
+#fetch-alerts:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Alerts Display Section */
+#alerts-display {
   margin: 20px auto;
   padding: 10px;
   width: 90%;
@@ -53,12 +58,49 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Summary Message */
+.summary-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #e7f3ff;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+}
+
+/* Alerts List */
+.alerts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alerts-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-left: 3px solid #28a745;
+  border-radius: 4px;
+}
+
+.alerts-list li:hover {
+  background-color: #e9ecef;
+}
+
 /* Error Message */
 #error-message {
   color: red;
   font-weight: bold;
   text-align: center;
-  margin-top: 10px;
+  margin: 20px auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 600px;
+  background-color: #ffe6e6;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
 }
 
 /* Hidden Class for Error Handling */
