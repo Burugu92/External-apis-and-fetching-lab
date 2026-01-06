@@ -2,6 +2,7 @@
 const weatherApi = "https://api.weather.gov/alerts/active?area="
 
 // Your code here!
+// Displaying weather alerts for a given US state
 // Base URL for National Weather Service API
 const API_BASE_URL = 'https://api.weather.gov';
 
